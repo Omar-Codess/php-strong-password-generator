@@ -11,7 +11,12 @@
 </head>
 
 <body>
-
+    <div class="container">
+        <form class="d-flex justify-content-between mt-4" action="index.php" method="GET">
+            <label for="length">Lunghezza password:</label>
+            <input class="ms-5" type="text" id="length" name="length">
+        </form>
+    </div>
 </body>
 
 </html>
