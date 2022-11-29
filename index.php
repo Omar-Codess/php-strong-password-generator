@@ -1,3 +1,16 @@
+<?php
+
+$characters = [
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "abcdefghijklmnopqrstuvwxyz",
+    "|\!£$%&/()=?^§;:_><.,#@][╬Ë",
+    "012346789"
+];
+
+$length = $_GET;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +25,7 @@
 
 <body>
     <div class="container">
+        <h1 class="text-center">Strong Password Generator</h1>
         <form class="d-flex justify-content-between mt-4" action="index.php" method="GET">
             <label for="length">Lunghezza password:</label>
             <input class="ms-5" type="text" id="length" name="length">
