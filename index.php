@@ -1,14 +1,17 @@
 <?php
 
-$characters = [
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-    "abcdefghijklmnopqrstuvwxyz",
-    "|\!£$%&/()=?^§;:_><.,#@][╬Ë",
-    "012346789"
-];
+function RandomString()
+{
+    $length = $_GET["length"];
+    $characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz|\!£$%&/()=?^§;:_><.,#@][╬Ë0123456789";
+    $randstring = "";
+    for ($i = 0; $i < $length; $i++) {
+        $randstring .= $characters[rand(0, $length)];
+    }
+    return $randstring;
+};
 
-$length = $_GET;
-
+echo RandomString();
 ?>
 
 <!DOCTYPE html>
